@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Isaac Sim: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+
+            "python": "/home/sgupta/isaacsim/kit/python/bin/python3",
+
+            "env": {
+                "RESOURCE_NAME": "IsaacSim",
+                "ISAAC_PATH": "/home/sgupta/isaacsim",
+                "CARB_APP_PATH": "/home/sgupta/isaacsim/kit",
+                "EXP_PATH": "/home/sgupta/isaacsim/apps"
+            },
+
+            "envFile": "/home/sgupta/isaacsim/.vscode/.standalone_examples.env",
+
+            "preLaunchTask": "setup_isaac_python"
+        }
+    ]
+}

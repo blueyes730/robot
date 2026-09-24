@@ -1,0 +1,25 @@
+{
+    "python-envs.pythonProjects": [
+        {
+            "path": ".",
+            "envManager": "ms-python.python:system",
+            "packageManager": "ms-python.python:pip"
+        }
+    ],
+
+    "python.defaultInterpreterPath": "/home/sgupta/isaacsim/kit/python/bin/python3",
+
+    "python.analysis.extraPaths": [
+        "/home/sgupta/isaacsim/python_packages",
+
+        "/home/sgupta/isaacsim/exts/isaacsim.core.experimental.utils",
+        "/home/sgupta/isaacsim/exts/isaacsim.core.experimental.prims",
+        "/home/sgupta/isaacsim/exts/isaacsim.core.simulation_manager",
+        "/home/sgupta/isaacsim/exts/isaacsim.core.rendering_manager",
+        "/home/sgupta/isaacsim/exts/isaacsim.storage.native",
+        "/home/sgupta/isaacsim/exts/isaacsim.sensors.experimental.physics",
+        "/home/sgupta/isaacsim/exts/isaacsim.sensors.experimental.rtx"
+    ],
+
+    "python-envs.terminal.autoActivationType": "off"
+}

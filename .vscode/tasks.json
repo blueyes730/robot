@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "setup_isaac_python",
+            "type": "shell",
+            "command": "export CARB_APP_PATH=/home/sgupta/isaacsim/kit && export ISAAC_PATH=/home/sgupta/isaacsim && export EXP_PATH=/home/sgupta/isaacsim/apps && source /home/sgupta/isaacsim/setup_python_env.sh && printenv > /home/sgupta/isaacsim/.vscode/.standalone_examples.env",
+            "problemMatcher": []
+        }
+    ]
+}

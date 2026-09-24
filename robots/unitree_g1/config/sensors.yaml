@@ -1,0 +1,27 @@
+sensors:
+  imu:
+    parent_link: torso_link
+    prim_name: imu_sensor
+    translation: [0.0, 0.0, 0.0]
+    orientation: [1.0, 0.0, 0.0, 0.0]
+    linear_acceleration_filter_size: 5
+    angular_velocity_filter_size: 5
+    orientation_filter_size: 5
+
+  head_camera:
+    parent_prim: head_link
+    prim_name: head_camera
+    frequency_hz: 30.0
+    resolution: [640, 480]
+    translation: [0.10, 0.0, 0.05]
+    orientation: [0.5, 0.5, -0.5, -0.5]
+    annotators: [rgb]
+
+  lidar:
+    parent_prim: head_link
+    prim_name: lidar_sensor
+    config: Example_Rotary
+    frequency_hz: 10.0
+    translation: [0.0, 0.0, 0.12]
+    orientation: [1.0, 0.0, 0.0, 0.0]
+    annotators: [generic-model-output]
