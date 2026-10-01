@@ -90,7 +90,7 @@ def main() -> None:
     try:
         # Warm up physics before reading articulation link metadata.
         print("1")
-        simulation_app.update()
+        simulation_app.update() 
 
         print("2")
         sensors = attach_sensors_to_robot(
