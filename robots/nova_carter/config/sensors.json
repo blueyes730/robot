@@ -1,0 +1,110 @@
+{
+  "rig": {
+    "parent_link": "chassis_link",
+    "prim_name": "sensor_rig",
+    "translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "orientation": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mounts": {
+      "torso": {
+        "prim_name": "torso_mount",
+        "translation": [
+          0.0,
+          0.0,
+          0.9
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "head": {
+        "prim_name": "head_mount",
+        "translation": [
+          0.0,
+          0.0,
+          1.5
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "sensors": {
+    "imu": {
+      "prim_name": "imu_sensor",
+      "translation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orientation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "linear_acceleration_filter_size": 5,
+      "angular_velocity_filter_size": 5,
+      "orientation_filter_size": 5,
+      "parent_prim": "torso_mount"
+    },
+    "camera": {
+      "parent_prim": "head_mount",
+      "prim_name": "camera_sensor",
+      "frequency_hz": 30.0,
+      "resolution": [
+        640,
+        480
+      ],
+      "translation": [
+        0.1,
+        0.0,
+        0.0
+      ],
+      "orientation": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "annotators": [
+        "rgb"
+      ]
+    },
+    "lidar": {
+      "parent_prim": "head_mount",
+      "prim_name": "lidar_sensor",
+      "config": "Example_Rotary",
+      "frequency_hz": 10.0,
+      "translation": [
+        0.0,
+        0.0,
+        0.12
+      ],
+      "orientation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "annotators": [
+        "generic-model-output"
+      ]
+    }
+  }
+}

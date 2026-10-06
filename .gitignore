@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ROS workspace build outputs
+ros_ws/build/
+ros_ws/install/
+ros_ws/log/

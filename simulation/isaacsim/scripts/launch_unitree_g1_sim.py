@@ -49,7 +49,7 @@ from isaacsim.core.rendering_manager import RenderingManager
 from isaacsim.core.simulation_manager import SimulationManager
 from isaacsim.storage.native import get_assets_root_path
 
-from simulation.isaacsim.scripts.sensors import (
+from robots.unitree_g1.sensors import (
     attach_sensors_to_robot,
     load_sensor_config,
 )
